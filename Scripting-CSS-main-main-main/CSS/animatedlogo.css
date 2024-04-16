@@ -1,0 +1,67 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+.holder
+{
+    position: relative;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.holder .icon
+{
+    width: 300px;
+}
+.holder .icon path
+{
+    fill: transparent;
+    stroke: 10;
+    stroke: whitesmoke;
+}
+.holder .icon.astral path
+{
+  stroke-dasharray: 1350;
+  stroke-dashoffset: 0;
+}
+.holder .icon.astral:hover path
+{
+  animation: animate-astral 10s linear forwards;
+  animation-iteration-count: 3;
+}
+@keyframes animate-astral
+{
+    0%
+    {
+        stroke-dashoffset: 0;
+    }
+    20%
+    {
+        stroke-dashoffset: 675;
+    }
+    40%
+    {
+        stroke-dashoffset: 1350;
+    }
+    80%
+    {
+        stroke-dashoffset: 2700;
+        
+    }
+    100%
+    {
+        stroke-dashoffset: 5400;
+        
+    }
+}

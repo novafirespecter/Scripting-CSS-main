@@ -1,0 +1,36 @@
+.grid-container
+{
+    display: grid;
+}
+
+.grid-container
+{
+    display: -moz-inline-grid;
+}
+
+#myBox
+{
+    width: 343px;
+    height: 60px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.allFonts
+{
+    color: gold;
+    font-style: unset;
+    font-size: 20px ;
+    font-family: cursive;
+}
+
+body
+{
+    background-color: darkcyan;
+}
+
+h1
+{
+    font-size: 50px;
+    color: snow;
+}
