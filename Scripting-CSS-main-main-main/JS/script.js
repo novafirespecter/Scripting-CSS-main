@@ -1,5 +1,5 @@
 // let myEmail = "6000144@sae.edu.za";
-// let password = "Gocheckthecode3725";
+// let password = "Gocheckthecode1234";
 // let x = String(360 / 8);
 // let num1 = 4;
 // let num2 = 2;
@@ -50,3 +50,9 @@ addAndPrint(5 , 10);
 
 multiplyFunction = (num3 , num4) => num3 * num4;
 console.log(multiplyFunction(3,4));
+
+//act 1
+
+const div = document.querySelector("div");
+
+div.style.height = "500px";
