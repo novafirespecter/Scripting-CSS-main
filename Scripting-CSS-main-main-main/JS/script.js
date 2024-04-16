@@ -27,32 +27,40 @@
 
 //Activity 1
 
-function createGreeting2 (name) 
-{
-    return `Hello , ${name} !` ;
-}
+// function createGreeting2 (name) 
+// {
+//     return `Hello , ${name} !` ;
+// }
 
-console.log(createGreeting2("Lucas")) ;
+// console.log(createGreeting2("Lucas")) ;
 
-// Activity 2
+// // Activity 2
 
-number1  = 1;
-number2 = 2;
+// number1  = 1;
+// number2 = 2;
 
-function addAndPrint(number1 , number2 )
-{
-    let sum = number1 + number2;
-    console.log("The sum of" , number1, "and" , number2 , "is", sum) 
-}
-addAndPrint(5 , 10);
+// function addAndPrint(number1 , number2 )
+// {
+//     let sum = number1 + number2;
+//     console.log("The sum of" , number1, "and" , number2 , "is", sum) 
+// }
+// addAndPrint(5 , 10);
 
-//Activity 3
+// //Activity 3
 
-multiplyFunction = (num3 , num4) => num3 * num4;
-console.log(multiplyFunction(3,4));
+// multiplyFunction = (num3 , num4) => num3 * num4;
+// console.log(multiplyFunction(3,4));
 
 //act 1
 
+function modifyDiv()
+{
 const div = document.querySelector("div");
+div.style.height = "600px";
+div.style.backgroundColor = "pink";
+div.style.borderWidth = "50px"
+div.style.borderStyle = "dashed";
+div.style.borderColor = "#DFFF00"
+}
 
-div.style.height = "500px";
+modifyDiv();
