@@ -66,13 +66,6 @@
 // modifyDiv();
 
 
-
-    const circlediv = document.querySelector("div");
-    const audio = document.getElementById("mySound");
-    circlediv.addEventListener('click', function()
-    {
-        circlediv.style.borderRadius = '0';
-        circlediv.style.width = '500px';
-        circlediv.style.backgroundColor = "turquoise";
-        audio.play();
-    });
+$( "#Press" ).on( "click", function() {
+    $( "#Press" ).trigger( "click" );
+  } );
