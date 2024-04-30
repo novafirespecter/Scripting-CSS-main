@@ -53,14 +53,26 @@
 
 //act 1
 
-function modifyDiv()
-{
-const div = document.querySelector("div");
-div.style.height = "600px";
-div.style.backgroundColor = "pink";
-div.style.borderWidth = "50px"
-div.style.borderStyle = "dashed";
-div.style.borderColor = "#DFFF00"
-}
+// function modifyDiv()
+// {
+// const div = document.querySelector("div");
+// div.style.height = "600px";
+// div.style.backgroundColor = "pink";
+// div.style.borderWidth = "50px"
+// div.style.borderStyle = "dashed";
+// div.style.borderColor = "#DFFF00"
+// }
 
-modifyDiv();
+// modifyDiv();
+
+
+
+    const circlediv = document.querySelector("div");
+    const audio = document.getElementById("mySound");
+    circlediv.addEventListener('click', function()
+    {
+        circlediv.style.borderRadius = '0';
+        circlediv.style.width = '500px';
+        circlediv.style.backgroundColor = "turquoise";
+        audio.play();
+    });

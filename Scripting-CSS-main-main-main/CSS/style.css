@@ -1,4 +1,4 @@
-.grid-container
+/* .grid-container
 {
     display: grid;
 }
@@ -6,17 +6,26 @@
 .grid-container
 {
     display: -moz-inline-grid;
-}
+} */
 
-#myBox
+/* #myBox
 {
     width: 343px;
     height: 60px;
     background-color: black;
     border-radius: 4px;
+} */
+
+#newCircle
+{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    border-radius: 100%;
+    transition: all 0.5s;
 }
 
-.allFonts
+/* .allFonts
 {
     color: gold;
     font-style: unset;
@@ -33,4 +42,4 @@ h1
 {
     font-size: 50px;
     color: snow;
-}
+} */
