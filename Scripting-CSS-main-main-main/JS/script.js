@@ -70,11 +70,16 @@
 //     $( "#Press" ).trigger( "click" );
 //   } );
 
-  $( ".container" ).on( "click", function() {
-    $('#dog').animate({
-      left: "+=500px",
-      height: "1000px",
-      width: "1000px"
-    }, 2000, function() {
-    });
-  });
+  // $( ".container" ).on( "click", function() {
+  //   $('#dog').animate({
+  //     left: "+=500px",
+  //     height: "1000px",
+  //     width: "1000px"
+  //   }, 2000, function() {
+  //   });
+  // });
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
