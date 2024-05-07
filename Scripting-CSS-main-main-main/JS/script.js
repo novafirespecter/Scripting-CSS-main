@@ -66,6 +66,15 @@
 // modifyDiv();
 
 
-$( "#Press" ).on( "click", function() {
-    $( "#Press" ).trigger( "click" );
-  } );
+// $( "#Press" ).on( "click", function() {
+//     $( "#Press" ).trigger( "click" );
+//   } );
+
+  $( ".container" ).on( "click", function() {
+    $('#dog').animate({
+      left: "+=500px",
+      height: "1000px",
+      width: "1000px"
+    }, 2000, function() {
+    });
+  });
