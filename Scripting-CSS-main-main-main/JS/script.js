@@ -80,6 +80,54 @@
   // });
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particles-js', 'PlugIns/particles.json', function() {
-  console.log('callback - particles.js config loaded');
-});
+// particlesJS.load('particles-js', 'PlugIns/particles.json', function() {
+//   console.log('callback - particles.js config loaded');
+// });
+
+function countdown(startNumber, callback)
+{
+  let count = startNumber;
+
+  let timer = setInterval(() => 
+  {
+    console.log(count);
+
+    if (count === 0)
+      {
+        clearInterval(timer);
+        callback();
+      }
+      else
+      {
+        count--;
+      }
+  }, 1000);
+}
+
+function displayMessage()
+{
+  console.log("Countdown Complete!");
+}
+
+countdown(10,displayMessage);
+
+setTimeout(myDay, 1000);
+setTimeout(myBell, 3000);
+setTimeout(myClass, 6000);
+setTimeout(myLibrary, 15000);
+
+function myBell() {
+  document.getElementById("demo").innerHTML = "A bell rings to start a school day";
+}
+
+function myClass() {
+  document.getElementById("demo").innerHTML = "First class begins";
+}
+
+function myLibrary() {
+  document.getElementById("demo").innerHTML = "Student went to a library to borrow a book";
+}
+
+function myDay() {
+  document.getElementById("demo").innerHTML = "First class begins";
+}
